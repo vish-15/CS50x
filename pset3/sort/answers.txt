@@ -1,0 +1,12 @@
+sort1 uses: Bubble sort
+
+How do you know?: This algorithm took considerably longer time on random and reversed data but was very quick on already sortrd data.So this algorithm seems to use bubble sort because it performs poorly on random and reversed data, but efficiently on already sorted data.
+
+sort2 uses: Merge sort
+
+How do you know?: It performs better than on random and reversed data, but not as well as sort1 on sorted data. This algorithm has overall balaced performece which could be due to the divide and conquer approach of merge sort.
+
+sort3 uses: Selection sort
+
+How do you know?: This algorithm resembles selection sort due to its consistent performance across all inputs due to its fixed number of comparisons and swaps per element.
+
