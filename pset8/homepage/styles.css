@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+title {
+    text-transform: uppercase;
+    color: red;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #6b869fcc
+}
+
+h1 {
+    color: darkslategray;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: black;
+    text-align: left;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.bg-dark {
+    background-color: #b52020; !important;
+    color: #fff;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: darkgray;
+}

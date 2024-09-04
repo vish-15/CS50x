@@ -1,0 +1,30 @@
+HTML Tags: (excluding html, head, body and title)
+- h1
+- script
+- link
+- header
+- nav
+- div
+- ul
+- li
+- a
+- main
+- h2
+- p
+- footer
+
+CSS Properties:
+- text-transform
+- font-family
+- color
+- max-width
+- background-color
+
+JavaScript and Bootstrap Usage:
+
+JavaScript (JS):
+- Included Bootstrap JavaScript (bootstrap.bundle.min.js) for interactive components like dropdown menus (navbar-toggler).
+
+Bootstrap (CSS and JS):
+- Integrated Bootstrap CSS (bootstrap.min.css) for responsive design (container, row, col-md-6), styling (bg-dark, navbar-dark), and layout utilities (mt-4, py-3).
+- Utilized Bootstrap JavaScript (bootstrap.bundle.min.js) for functionality such as collapsible navbars (navbar-toggler).

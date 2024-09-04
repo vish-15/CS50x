@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkAnswer(id) {
+                // reset all buttons to default style
+                resetButtonStyles();
+
+                // get the clicked button element
+                var button = document.getElementById(id);
+
+                // if the clicked answer is correct
+                if (id === 'b') {
+                    button.style.backgroundColor = 'green';
+                    document.getElementById('mc-feedback').innerHTML = '<p class="feedback correct">Correct!</p>';
+                    // if clicked answer is incorrect
+                } else {
+                    button.style.backgroundColor = 'red';
+                    document.getElementById('mc-feedback').innerHTML = '<p class="feedback incorrect">Incorrect</p>';
+                }
+            }
+
+            function resetButtonStyles() {
+                var buttons = document.getElementsByTagName('button');
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.backgroundColor = '#ddd';
+                }
+            }
+
+            function checkFreeResponse() {
+                var answerInput = document.getElementById('free-response-answer');
+                var userAnswer = answerInput.value.trim().toLowerCase();
+
+                // check if the user answer is correct
+                if (userAnswer === 'leonardo da vinci') {
+                    answerInput.style.backgroundColor = 'green';
+                    document.getElementById('fr-feedback').innerHTML = '<p class="feedback correct">Correct!</p>';
+                } else {
+                    answerInput.style.backgroundColor = 'red';
+                    document.getElementById('fr-feedback').innerHTML = '<p class="feedback incorrect">Incorrect</p>';
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <div id="multiple-choice-question">
+                    <h3>What is the capital of Spain?</h3>
+                    <button id="a" onclick="checkAnswer('a')">Paris</button>
+                    <button id="b" onclick="checkAnswer('b')">Madrid</button>
+                    <button id="c" onclick="checkAnswer('c')">Berlin</button>
+                    <button id="d" onclick="checkAnswer('d')">London</button>
+                    <div id="mc-feedback"></div>
+                </div>
+
+                <div class="section">
+                    <h2>Part 2: Free Response </h2>
+                    <hr>
+                    <!-- TODO: Add free response question here -->
+                    <div id="free-response-question">
+                        <h3>Who painted the Mona Lisa?</h3>
+                        <input type="text" id="free-response-answer" placeholder="your answer...">
+                        <button onclick="checkFreeResponse()">Submit</button>
+                        <div id="fr-feedback"></div>
+                    </div>
+                </div>
+            </body>
+
+        </html>

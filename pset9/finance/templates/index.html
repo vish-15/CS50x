@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <h1 class="mb-4">Portfolio Overview</h1>
+
+    <h3>Cash Balance: {{ cash | usd }}</h3>
+
+    <form action="/add_cash" method="post">
+        <div class="mb-3">
+            <label for="amount" class="form-label">Add Cash:</label>
+            <input type="text" id="amount" name="amount" class="form-control" placeholder="Enter amount to add">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Cash</button>
+    </form>
+
+    <hr>
+
+    <h2 class="mt-4 mb-3">Stock Holdings</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price per Share</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.total_shares }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.total_value | usd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3>Total Portfolio Value: {{ total_portfolio_value | usd }}</h3>
+
+{% endblock %}
