@@ -13,7 +13,7 @@ Welcome to the CS50 Problem Sets repository! This document provides detailed inf
 7. [Problem Set 6: Python](#problem-set-6-python)
 8. [Problem Set 7: SQL](#problem-set-7-sql)
 9. [Problem Set 8: Flask](#problem-set-8-flask)
-10. [Final Project](#problem-set-9-final-project)
+10. [Final Project](#final-project)
 
 ## Problem Set 0: Scratch
 
@@ -144,7 +144,7 @@ Develop web applications using Flask, a Python web framework. This problem set c
 
 ## Final Project
 
-**Description:**
+**Description:**  
 A web application that mimics a game store environment. Built using Flask for the backend and a combination of HTML and CSS for the frontend, this project demonstrates fundamental features of an online game store.
 
 **LINK:** https://github.com/vish-15/GAMES50
