@@ -141,3 +141,10 @@ Develop web applications using Flask, a Python web framework. This problem set c
 **Important Notes:**  
 - Familiarize yourself with Flask documentation and best practices.
 - Focus on building secure and user-friendly web applications.
+
+## Final Project
+
+**Description:**
+A web application that mimics a game store environment. Built using Flask for the backend and a combination of HTML and CSS for the frontend, this project demonstrates fundamental features of an online game store.
+
+**LINK:** https://github.com/vish-15/GAMES50
